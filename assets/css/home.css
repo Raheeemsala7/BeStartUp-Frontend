@@ -23,9 +23,7 @@ body {
 }
 
 
-section:not(.landing) {
-    margin: 100px 0;
-}
+
 
 .title-section {
     color: var(--text-white);
@@ -45,7 +43,7 @@ section:not(.landing) {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 12.5rem 0;
+    padding: 9.5rem 0;
     position: relative;
     overflow: hidden;
 
@@ -170,6 +168,7 @@ section:not(.landing) {
     margin: 0 auto;
     position: relative;
     color: var(--text-white);
+    width: 60%;
 }
 
 .section-title {
@@ -180,7 +179,6 @@ section:not(.landing) {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 0.5rem;
 }
 
 .property .or {
@@ -310,7 +308,7 @@ section:not(.landing) {
     position: relative;
     align-self: stretch;
     color: #9ca3af;
-
+    margin-bottom: 0;
 }
 
 .property .text-wrapper-4 {
@@ -327,10 +325,7 @@ section:not(.landing) {
 }
 
 .how-work {
-
-    margin-top: 100px;
     padding: 40px 0;
-
     .btn-next-steps {
         display: flex;
         padding: 15px;
@@ -475,7 +470,7 @@ section:not(.landing) {
 .cards-mobile{
     display:none;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     h4 {
         color: var(--text-white);
         font-feature-settings: 'liga' off, 'clig' off;
@@ -490,9 +485,11 @@ section:not(.landing) {
 }
 .card-item {
  background: var(--bg-card);
-    margin: 10px 0;
     border-radius: 8px;
     overflow: hidden;
+    p {
+        margin: 0;
+    }
 
 }
 
@@ -611,7 +608,6 @@ section:not(.landing) {
 }
 
 .reviews {
-    margin-top: 60px;
     padding: 60px 0;
     overflow: hidden;
     & h6 {
@@ -627,7 +623,7 @@ section:not(.landing) {
         margin-top: 40px;
         background: var(--Palette-Navy-Navy900, #0C1128);
         display: flex;
-       padding: 15px 40px;
+        padding: 15px 40px;
         gap: 40px;
 
 
@@ -783,26 +779,9 @@ section:not(.landing) {
         margin: 0 auto;
         color: #ffffff;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-
-        background: linear-gradient(135deg, #08051b00, #0d2b6b69, #046ffa00, #1BEEE94D, #5e0c4c93, #0c1b47bb, #0504444d);
+        background-color: var(--bg-card);
         border-radius: 15px;
         position: relative;
-
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 3px;
-            right: 3px;
-            bottom: 3px;
-            left: 3px;
-            background: linear-gradient(135deg, #4e46b4, #6930c3);
-            border-radius: 12px;
-            opacity: .6;
-            z-index: -1;
-        }
-
-
 
         .info-text {
             flex: 1;
@@ -912,12 +891,10 @@ section:not(.landing) {
 
 
 @media (max-width:1200px) {
-    section:not(.landing) {
-        margin: 90px 0;
-    }
+ 
 
     .landing {
-        padding: 12.5rem 0;
+        padding: 8.5rem 0;
     }
 
     #typed-output,
@@ -937,9 +914,7 @@ section:not(.landing) {
 
 @media (max-width:992px) {
 
-    section:not(.landing) {
-        margin: 50px 0;
-    }
+   
 
     #typed-output,
     .content h2,
@@ -957,7 +932,7 @@ section:not(.landing) {
 
     .btn-next-steps {
         width: 630px !important;
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
     .section-cards::before {
@@ -966,11 +941,32 @@ section:not(.landing) {
     .cards-mobile {
         display: flex;
     }
+    .pricing-card{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100% !important;
+
+        & .price-description{
+            display: none;
+        }
+        & hr{
+            display: none;
+        }
+    }
+
+    .questions-section .info-box {
+        display: none;
+    }
+    .property {
+        width: 80%;
+    } 
 }
 
 @media (max-width:767px) {
+    
     section {
-        padding: 60px 0 !important;
+        padding: 40px 0 !important;
     }
 
     #typed-output,
@@ -1043,22 +1039,9 @@ section:not(.landing) {
         font-size: 1.25rem !important;
         padding: 15px !important;
     }
-
-    .pricing-card{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 100% !important;
-
-        & .price-description{
-            display: none;
-        }
-        & hr{
-            display: none;
-        }
-    }
-
-
+.property {
+    width: 100%;
+}
     .questions-section .info-box {
         display: none;
     }
@@ -1068,12 +1051,12 @@ section:not(.landing) {
 @media (max-width:576px) {
 
     section {
-        padding: 60px 0 !important;
+        padding: 30px 0 !important;
     }
 
-    section:not(.landing) {
+    /* section:not(.landing) {
         margin: 50px 0;
-    }
+    } */
 
     .btn-basic {
         width: 100% !important;
@@ -1124,6 +1107,9 @@ section:not(.landing) {
     .property .step-info {
         flex-direction: column;
         gap: 10px !important;
+    }
+    .pricing-card{
+        flex-direction: column !important;
     }
 }
 

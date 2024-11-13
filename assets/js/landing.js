@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       if (swiper) {
-        swiper.destroy(true, true); // تعطيل السلايدر عند عرض أكبر من 767px
+        swiper.destroy(true, true); 
         swiper = null;
       }
     }
 
 
-    swiper2 = new Swiper('#mySwiper', { // نستخدم معرّف #mySwiper
+    swiper2 = new Swiper('#mySwiper', { 
       loop: true,
       autoplay: {
         delay: 3000,
@@ -69,14 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-
-  // استدعاء الدالة عند التحميل
   initSwiper();
-
-  // إعادة فحص العرض عند تغيير حجم الشاشة
   window.addEventListener('resize', initSwiper);
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const featuresOriginal = document.querySelector('.features');
@@ -85,10 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleFeatures() {
     if (window.innerWidth <= 767) {
       featuresOriginal.style.display = 'none ';
-      featuresAlternate.style.display = 'flex'; // عرض الشبكة للمحتوى البديل
-      console.log("nonw small")
+      featuresAlternate.style.display = 'flex'; 
     } else {
-      console.log("big large- ")
       featuresAlternate.style.display = 'none ';
       featuresOriginal.style.display = 'grid';
     }
@@ -106,18 +99,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function showSteps() {
-  // حذف الزر الأول بشكل كامل من DOM
   var button = document.getElementById('replaceButton');
   button.remove();
 
-  // إظهار المحتوى الجديد
   var stepsContent = document.getElementById('stepsContent');
   stepsContent.style.display = 'block';
 }
 
-
 const steps = document.querySelectorAll('.step');
-
 const progressBar = document.querySelector('.progress');
 const progressPercentage = document.querySelector('.percentage');
 
@@ -132,8 +121,6 @@ steps.forEach((step, index) => {
     progressPercentage.textContent = `${percentage}%`;
   });
 });
-
-
 
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;

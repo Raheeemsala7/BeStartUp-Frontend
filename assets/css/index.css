@@ -90,7 +90,7 @@ section {
     right: 0;
     bottom: 0;
     background: url(../imgs/sectionlanding.png) 50% / cover no-repeat;
-    filter: grayscale(69%) brightness(50%);
+    filter: grayscale(69%) brightness(50%) blur(3px);
     transform: scale(1.2);
     opacity: 0.3;
     z-index: -1;
