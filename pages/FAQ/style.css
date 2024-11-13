@@ -1,0 +1,106 @@
+
+body {
+    font-family: var(--font-family);
+    background-color: rgb(16, 22, 53) !important;
+}
+
+.faq-section {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
+    filter: grayscale(69%) brightness(50%);
+    transform: scale(1.2);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-white);
+}
+.faq-item {
+    background-color: #232335;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.1em;
+    color: var(--text-white);
+
+}
+
+
+
+
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    text-align: left;
+    padding: 0 15px;
+    overflow: hidden;
+    background-color: #232335;
+    color: #d1d1e0;
+    transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -webkit-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -moz-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -ms-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -o-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq-answer.open {
+    max-height: 500px; 
+    opacity: 1;
+    padding-bottom: 15px;
+}
+
+
+
+.faq-question span {
+    background-color: var(--text-white);
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #9a4efb;
+    margin-right: 10px;
+    transition: transform .4s ease;
+    -webkit-transition: transform .4s ease;
+    -moz-transition: transform .4s ease;
+    -ms-transition: transform .4s ease;
+    -o-transition: transform .4s ease;
+}
+
+.faq-question span.open {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+

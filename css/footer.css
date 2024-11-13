@@ -1,0 +1,45 @@
+.footer .container {
+    background: #0b0c1a;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    .footer-links {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+
+        a {
+            color: #d1d1e9;
+            /* Light color for the links */
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 30px;
+
+
+            &:hover {
+                color: #ffffff;
+                /* Change color on hover */
+            }
+        }
+
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: #d1d1e9;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+@media (max-width:576px) {
+     .footer-links {
+        flex-direction: column;
+     } 
+}

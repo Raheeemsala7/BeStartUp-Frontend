@@ -1,0 +1,48 @@
+/* style.css */
+
+body {
+    font-family: var(--font-family);
+    background-color: rgb(16, 22, 53) !important;
+}
+
+.About-Us {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+
+    padding:  100px 0; 
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    
+}
+.About-Us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
+    filter: grayscale(69%) brightness(50%);
+    transform: scale(1.2);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+.About-Us h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.About-Us p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 20px;
+}

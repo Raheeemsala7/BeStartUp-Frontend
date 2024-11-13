@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@font-face {
+    font-family: 'Yaro';
+    src: url('/Font/yaro-font-family/YaroOp.ttf') format('truetype');
+    /* أو أي صيغة أخرى متوفرة */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --text-white: #FAFAFA;
+    --text-landing-subtitle-color: #B5B3B3;
+    --primaryButton-bg-default: rgba(134, 70, 244, 1);
+    --bg-card: linear-gradient(314.95deg, rgba(58, 79, 191, 0) -1.92%, rgba(134, 70, 244, 0.5) 85.51%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));;
+    --bg-card-hover: linear-gradient(313deg, rgba(134, 70, 244, 0.90) -3.11%, rgba(58, 79, 191, 0.90) 86.8%);;
+    --font-Sub-Heading: 'Yaro', sans-serif !important;
+    --font-family: "DM Sans", sans-serif !important;
+
+}
+
+
+
+.w-fit {
+    width: fit-content;
+}
+
+.conatiner {
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+button{
+    border: none;
+}
+
+.primaryButton {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--Radius-m, 12px);
+    background: var(--primaryButton-bg-default);
+    color: #fff;
+    font-size: var(--Font-sizepage-subtitle2);
+    font-weight: 700;
+    line-height: 26.04px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+section {
+padding: 60px 0;
+}
+

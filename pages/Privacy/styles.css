@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    background-color: rgb(16, 22, 53) !important;
+}
+
+.privacy-section{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    
+}
+.privacy-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
+    filter: grayscale(69%) brightness(50%);
+    transform: scale(1.2);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.content p {
+    margin-bottom: 40px;
+    font-size: 1em;
+    color: #cccccc;
+    text-align: center;
+
+}
