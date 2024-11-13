@@ -8,19 +8,15 @@ body {
   background-repeat: no-repeat;
   animation: moveBackground 10s infinite linear;
 }
-
-
-
 .login {
   font-family: var(--font-Sub-Heading);
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   overflow: hidden;
 }
-
 .login::before {
   content: '';
   position: absolute;
@@ -34,16 +30,11 @@ body {
   opacity: 0.3;
   z-index: -1;
 }
-
-
-
 .login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
-
+  /* height: 100vh; */
   .card {
     text-align: center;
     background-color: hsla(0, 0%, 98%, 0.101);
@@ -51,9 +42,6 @@ body {
     backdrop-filter: blur(300px)
   }
 }
-
-
-
 
 
 @keyframes moveBackground {
@@ -84,8 +72,7 @@ button {
 .sign-form {
   display: flex;
   flex-direction: column;
-  width: 643px;
-  /* height: 850px; */
+  /* width: 643px; */
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -106,12 +93,6 @@ button {
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-}
-
-.sign-form .logo {
-  position: relative;
-  width: 228px;
-  height: 48.31px;
 }
 
 .sign-form .text {
@@ -164,7 +145,6 @@ button {
 
 .sign-form .btn-google {
   display: flex;
-  height: 54px;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -230,7 +210,6 @@ button {
 .sign-form .input-filled-new {
   display: flex;
   width: 515px;
-  height: 50px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -304,18 +283,6 @@ button {
   line-height: normal;
 }
 
-/* .sign-form .submit {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "DM Sans-Bold", Helvetica;
-  font-weight: 700;
-  color: #fafafa;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-} */
 
 .sign-form .bottom {
   display: inline-flex;

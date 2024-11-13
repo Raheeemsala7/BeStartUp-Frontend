@@ -2,11 +2,8 @@
 
 @font-face {
     font-family: 'Yaro';
-    src: url('/Font/yaro-font-family/YaroOp.ttf') format('truetype');
-    /* أو أي صيغة أخرى متوفرة */
+    src: url('/assets/Font/yaro-font-family/YaroOp.ttf') format('truetype');
 }
-
-
 
 * {
     margin: 0;
@@ -15,19 +12,17 @@
 }
 
 :root {
-
     --text-white: #FAFAFA;
     --text-landing-subtitle-color: #B5B3B3;
     --primaryButton-bg-default: rgba(134, 70, 244, 1);
     --bg-card: linear-gradient(314.95deg, rgba(58, 79, 191, 0) -1.92%, rgba(134, 70, 244, 0.5) 85.51%),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));;
-    --bg-card-hover: linear-gradient(313deg, rgba(134, 70, 244, 0.90) -3.11%, rgba(58, 79, 191, 0.90) 86.8%);;
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    ;
+    --bg-card-hover: linear-gradient(313deg, rgba(134, 70, 244, 0.90) -3.11%, rgba(58, 79, 191, 0.90) 86.8%);
+    ;
     --font-Sub-Heading: 'Yaro', sans-serif !important;
     --font-family: "DM Sans", sans-serif !important;
-
 }
-
-
 
 .w-fit {
     width: fit-content;
@@ -42,7 +37,7 @@ section {
     overflow: hidden;
 }
 
-button{
+button {
     border: none;
 }
 
@@ -63,8 +58,40 @@ button{
     text-decoration-skip-ink: none;
 }
 
-
 section {
-padding: 60px 0;
+    padding: 60px 0;
 }
 
+.sec-bg{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+
+    
+    h2 {
+        font-size: 3.5em;
+        margin-bottom: 50px;
+        color: var(--text-white);
+        font-family: var(--font-Sub-Heading);
+    
+    }
+    
+}
+.sec-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../imgs/sectionlanding.png) 50% / cover no-repeat;
+    filter: grayscale(69%) brightness(50%);
+    transform: scale(1.2);
+    opacity: 0.3;
+    z-index: -1;
+}

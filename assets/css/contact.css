@@ -10,40 +10,6 @@ body {
     font-family: var(--font-family);
     background-color: rgb(16, 22, 53) !important;
 }
-
-.contact-section {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding:  100px 0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    h2 {
-        font-size: 3.5em;
-        margin-bottom: 50px;
-        color: var(--text-white);
-        font-family: var(--font-Sub-Heading);
-    
-    }
-}
-.contact-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
-    filter: grayscale(69%) brightness(50%);
-    transform: scale(1.2);
-    opacity: 0.3;
-    z-index: -1;
-}
-
-
-
 .contact-email {
     background: linear-gradient(90deg, #9a4efb, #1dd8e2);
     padding: 15px 30px;
@@ -55,12 +21,9 @@ body {
     font-size: 1.1em;
     margin-bottom: 30px;
 }
-
 .email-icon {
     font-size: 1.5em;
 }
-
-
 .social-media{
     display: flex;
     gap: 10px;

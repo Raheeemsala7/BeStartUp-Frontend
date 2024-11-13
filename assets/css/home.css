@@ -2,7 +2,7 @@ body {
     font-family: var(--font-family);
     background-color: rgb(16, 22, 53) !important;
     backdrop-filter: blur(175px);
-    background-image: url(../../svg/Animated\ BG.svg);
+    background-image: url(../../assets/svg/Animated\ BG.svg);
     color: var(--text-white);
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ section:not(.landing) {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
+    background: url(../../assets/imgs/sectionlanding.png) 50% / cover no-repeat;
     filter: grayscale(69%) brightness(50%);
     transform: scale(1.2);
     opacity: 0.3;
@@ -395,7 +395,7 @@ section:not(.landing) {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../../imgs/sectionlanding.png) 50% / cover no-repeat;
+    background: url(../../assets/imgs/sectionlanding.png) 50% / cover no-repeat;
     filter: grayscale(69%) brightness(50%);
     transform: scale(1.2);
     opacity: 0.3;
