@@ -1,0 +1,313 @@
+body {
+    font-family: var(--font-family);
+    background-color: rgb(16, 22, 53) !important;
+    backdrop-filter: blur(175px);
+    background-image: url(../svg/Animated\ BG.svg);
+    color: var(--text-white);
+    background-size: cover;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    animation: moveBackground 10s infinite linear;
+    overflow: hidden;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-white);
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.auth-form {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    .card {
+        text-align: center;
+        background-color: hsla(0, 0%, 98%, 0.101);
+        box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(300px)
+    }
+}
+.card-sign-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 64px;
+    position: relative;
+    background-color: hsla(0, 0%, 98%, 0.101);
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(300px);
+    border-radius: 24px;
+}
+
+.card-sign-form .frame {
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .heading {
+    position: relative;
+    width: fit-content;
+    font-family: var(--font-Sub-Heading);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+.card-sign-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .frame-2 {
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 36px;
+    border: 2px solid;
+    border-color: #e3e3e3;
+    box-shadow: 0px 1px 2px #00000008;
+    cursor: pointer;
+}
+
+.card-sign-form .plus {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -3.00px;
+}
+
+.card-sign-form .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    font-weight: 700;
+    color: var(--text-white);
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: 21.6px;
+    white-space: nowrap;
+}
+
+.card-sign-form .or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .vector {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 2px;
+}
+
+.card-sign-form .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+.form-control {
+    width: 100%;
+}
+
+.card-sign-form .input-filled-new {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 20px;
+    position: relative;
+    border-radius: 36px;
+    border: 1.5px solid;
+    border-color: #e3e3e3;
+}
+
+.card-sign-form .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    margin-top: -4.50px;
+    margin-bottom: -1.50px;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.card-sign-form .password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .text-input-icons {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -3.00px;
+    margin-bottom: -3.00px;
+}
+
+.card-sign-form .text-wrapper-5 {
+    position: relative;
+    align-self: stretch;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #8646f4;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.card-sign-form .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 0;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primaryButton-bg-default);
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    color: var(--text-white);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.card-sign-form .bottom {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.card-sign-form .extra-info {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "DM Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+.card-sign-form .span {
+    color: #ffffff;
+}
+
+.card-sign-form .text-wrapper-6 {
+    color: #a3aed0;
+}
+
+.card-sign-form .hyperlink {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #8646f4;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}

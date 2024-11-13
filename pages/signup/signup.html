@@ -4,55 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../assets" />
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+    <link rel="stylesheet" href="../../assets/css/auth.css" />
+    <link rel="stylesheet" href="../../assets/css/signup.css" />
   </head>
   <body>
-    <section class="signup">
-      <div class="sign-form">
+   
+
+
+    <section class="login auth-form sec-bg">
+      <div class="card-sign-form">
         <div class="frame">
           <img class="logo" src="../../assets/svg/Logo.svg" />
           <div class="text">
             <h4 class="heading">Create an account</h4>
-            <p class="div">Please create an account to continue.</p>
+            <p>Please create an account to continue.</p>
           </div>
           
-          <form >
+          <form id="login-form">
             <div class="frame-2">
-              <button class="btn-google">
-                <img class="plus" src="../../assets/svg/Group.svg"  alt="logo"/>
-                <p class="text-wrapper-2">Sign in with Google</p>
-              </button>
-              <div class="or">
-                <img class="vector" src="../../assets/svg/Vector 1.svg" />
-                <div class="text-wrapper-3">or</div>
-                <img class="vector" src="../../assets/svg/Vector 1.svg" />
-              </div>
-              <div class="input-filled-new">
-                <input type="email" id="email" class="text-wrapper-4" placeholder="E-mail address" />
-              </div>
-
-              <div class="password">
-                <div class="input-filled-new">
-                <input type="password" id="password" class="text-wrapper-4" placeholder="Password" />
-                  <img class="text-input-icons" src="../../assets/svg/Layer 2.svg" />
+                <button type="button" class="btn-google">
+                    <img class="plus" src="../../assets/svg/Group.svg"  alt="logo"/>
+                    <p class="text-wrapper-2">Sign in with Google</p>
+                </button>
+                <div class="or">
+                    <img class="vector" src="../../assets/svg/Vector 1.svg" />
+                    <div class="text-wrapper-3">or</div>
+                    <img class="vector" src="../../assets/svg/Vector 1.svg" />
                 </div>
-                <p>Passwords should contain at least 8 characters, mix of uppercase letters, lowercase letters, numbers, and symbols.</p>
-              </div>
+                <div class="form-control">
+                  <div class="input-filled-new">
+                    <input type="email" id="email" class="text-wrapper-4" placeholder="E-mail address" />
+                  </div>
+                  <span id="email-error" class="error-message"></span>
+                </div>
+        
+                <div class="form-control">
+                  <div class="password">
+                    <div class="input-filled-new">
+                        <input type="password" id="password" class="text-wrapper-4" placeholder="Password" />
+                        <img class="text-input-icons" src="../../assets/svg/Layer 2.svg" />
+                      </div>
+                      <span id="password-error" class="error-message"></span>
+                      <!-- <p>Passwords should contain at least 8 characters, mix of uppercase letters, lowercase letters, numbers, and symbols.</p> -->
+                </div>
+                </div>
             </div>
-              <button class="submit">Sign up</button>
-          </div>
+            <button type="submit" class="submit">Sign Up</button>
+        </form>
 
           <div class="bottom">
             <p class="extra-info">
               <span class="span">Need an account?</span> <span class="text-wrapper-6">&nbsp;</span>
             </p>
-            <a href="../signin/signin.html" class="hyperlink">Sign In</a>
+            <a href="../signin/signin.html" class="hyperlink">Sign up</a>
           </div>
         </div>
       </div>
     </section>
 
+    <script src="../../assets/js/signup.js"></script>
   </body>
 </html>
 
