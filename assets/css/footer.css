@@ -42,4 +42,7 @@
      .footer-links {
         flex-direction: column;
      } 
+     .footer-links a {
+        margin-right: 0 !important;
+     }
 }

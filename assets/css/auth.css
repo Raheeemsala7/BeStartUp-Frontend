@@ -198,8 +198,8 @@ button {
 }
 
 .error-message {
+    display: none ;
     width: fit-content;
-    display: block;
     margin-top: 5px;
     background-color: #8b1d1d;
     padding: 2px 4px;

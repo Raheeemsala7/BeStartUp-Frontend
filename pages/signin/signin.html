@@ -14,44 +14,64 @@
           <img class="logo" src="../../assets/svg/Logo.svg" />
           <div class="text">
             <h4 class="heading">Welcome back</h4>
-            <p >Please login to continue to your account.</p>
+            <p>Please login to continue to your account.</p>
           </div>
-          
+
           <form id="login-form">
             <div class="frame-2">
-                <button type="button" class="btn-google">
-                    <img class="plus" src="../../assets/svg/Group.svg"  alt="logo"/>
-                    <p class="text-wrapper-2">Sign in with Google</p>
-                </button>
-                <div class="or">
-                    <img class="vector" src="../../assets/svg/Vector 1.svg" />
-                    <div class="text-wrapper-3">or</div>
-                    <img class="vector" src="../../assets/svg/Vector 1.svg" />
+              <button type="button" class="btn-google">
+                <img class="plus" src="../../assets/svg/Group.svg" alt="logo" />
+                <p class="text-wrapper-2">Sign in with Google</p>
+              </button>
+              <div class="or">
+                <img class="vector" src="../../assets/svg/Vector 1.svg" />
+                <div class="text-wrapper-3">or</div>
+                <img class="vector" src="../../assets/svg/Vector 1.svg" />
+              </div>
+              <div class="form-control">
+                <div class="input-filled-new">
+                  <input
+                    type="email"
+                    id="email"
+                    class="text-wrapper-4"
+                    placeholder="E-mail address"
+                  />
                 </div>
-                <div class="form-control">
+                <span id="email-error" class="error-message"></span>
+              </div>
+
+              <div class="form-control">
+                <div class="password">
                   <div class="input-filled-new">
-                    <input type="email" id="email" class="text-wrapper-4" placeholder="E-mail address" />
-                  </div>
-                  <span id="email-error" class="error-message"></span>
+                    <input
+                      type="password"
+                      id="password"
+                      class="text-wrapper-4"
+                      placeholder="Password"
+                    />
+                    <span class="toggle-icon">
+                      <img
+                        class="text-input-icons"
+                        src="../../assets/svg/Layer 2.svg"
+                      />
+                    </span>
                 </div>
-        
-                <div class="form-control">
-                  <div class="password">
-                    <div class="input-filled-new">
-                        <input type="password" id="password" class="text-wrapper-4" placeholder="Password" />
-                        <img class="text-input-icons" src="../../assets/svg/Layer 2.svg" />
-                      </div>
-                      <span id="password-error" class="error-message"></span>
-                    <a href="../froget-password/froget-password.html" class="text-wrapper-5">Forget password</a>
+                  <span id="password-error" class="error-message"></span>
+                  <a
+                    href="../froget-password/froget-password.html"
+                    class="text-wrapper-5"
+                    >Forget password</a
+                  >
                 </div>
-                </div>
+              </div>
             </div>
             <button type="submit" class="submit">Sign In</button>
-        </form>
+          </form>
 
           <div class="bottom">
             <p class="extra-info">
-              <span class="span">Need an account?</span> <span class="text-wrapper-6">&nbsp;</span>
+              <span class="span">Need an account?</span>
+              <span class="text-wrapper-6">&nbsp;</span>
             </p>
             <a href="../signup/signup.html" class="hyperlink">Sign up</a>
           </div>
@@ -59,10 +79,6 @@
       </div>
     </section>
 
-<script src="../../assets/js/signin.js"></script>
-
-    
+    <script src="../../assets/js/signin.js"></script>
   </body>
 </html>
-
-

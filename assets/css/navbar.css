@@ -1,5 +1,9 @@
 .navbar {
 
+    width: 95%;
+    margin: 0 auto;
+    padding: 18px 0; 
+
     .header {
         width: 100%;
         display: flex;

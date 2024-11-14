@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
     font-family: 'Yaro';
@@ -17,30 +17,23 @@
     --primaryButton-bg-default: rgba(134, 70, 244, 1);
     --bg-card: linear-gradient(314.95deg, rgba(58, 79, 191, 0) -1.92%, rgba(134, 70, 244, 0.5) 85.51%),
         linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-    ;
     --bg-card-hover: linear-gradient(313deg, rgba(134, 70, 244, 0.90) -3.11%, rgba(58, 79, 191, 0.90) 86.8%);
-    ;
     --font-Sub-Heading: 'Yaro', sans-serif !important;
-    --font-family: "DM Sans", sans-serif !important;
+    --font-family: "Poppins", sans-serif !important;
 }
-
 .w-fit {
     width: fit-content;
 }
-
 .conatiner {
     margin: 0 auto;
 }
-
 section {
     position: relative;
     overflow: hidden;
 }
-
 button {
     border: none;
 }
-
 .primaryButton {
     display: flex;
     padding: 8px 12px;
@@ -49,38 +42,32 @@ button {
     gap: 10px;
     border-radius: var(--Radius-m, 12px);
     background: var(--primaryButton-bg-default);
-    color: #fff;
-    font-size: var(--Font-sizepage-subtitle2);
     font-weight: 700;
     line-height: 26.04px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    color: var(--text-white);
+    a {
+        color: var(--text-white);
+        text-decoration: none;
+    }
 }
-
 section {
     padding: 60px 0;
 }
-
-.sec-bg{
+.sec-bg {
     position: relative;
     overflow: hidden;
     text-align: center;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-white);
-
-    
     h2 {
         font-size: 3.5em;
         margin-bottom: 50px;
         color: var(--text-white);
         font-family: var(--font-Sub-Heading);
-    
     }
-    
 }
 .sec-bg::before {
     content: '';

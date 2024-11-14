@@ -15,28 +15,21 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 96px */
     background: linear-gradient(90deg, #BD66E9 0%, #8646F4 50%, #1BEEE9 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
 .title-section {
     color: var(--text-white);
     text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
     font-family: Yaro;
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 1.5rem;
 }
-
 
 .landing {
     font-family: var(--font-Sub-Heading);
@@ -79,7 +72,6 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        /* 96px */
         background: linear-gradient(90deg, #BD66E9 0%, #8646F4 50%, #1BEEE9 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -149,20 +141,20 @@ body {
         h2 {
             text-align: left;
             font-size: 1.3em;
-            margin-bottom: 15px;
-            color: #ffffff;
+            color: var(--text-white);
+            font-family: var(--text-landing-subtitle-color);
         }
 
         p {
             font-size: 1em;
             color: #ffffff;
             line-height: 1.5;
+            margin-bottom: 0;
         }
     }
 
 
 }
-
 
 .property {
     margin: 0 auto;
@@ -193,7 +185,6 @@ body {
     gap: 12px;
     flex-direction: row;
     margin: 0 auto;
-
 }
 
 .property .progress-wrapper {
@@ -202,7 +193,6 @@ body {
     flex-grow: 1;
     height: 8px;
     background: rgba(249, 245, 255, 1);
-
     border-radius: 8px;
 }
 
@@ -223,9 +213,6 @@ body {
     white-space: nowrap;
 }
 
-
-
-
 .parent-steps {
     display: flex;
     flex-direction: column;
@@ -234,7 +221,6 @@ body {
 }
 
 .property .active {
-
     justify-content: flex-start;
     border-radius: 10px;
     border: 2px solid;
@@ -250,6 +236,7 @@ body {
     background-color: #1b255933;
     border-radius: 10px;
     padding-left: 10%;
+    cursor: pointer;
 }
 
 .property .step-info {
@@ -280,7 +267,6 @@ body {
 .property .step-num {
     position: relative;
     width: fit-content;
-
     font-weight: 400;
     color: #ffffff;
     font-size: 14px;
@@ -299,9 +285,7 @@ body {
 .property .text-wrapper-3 {
     position: relative;
     align-self: stretch;
-
     color: #ffffff;
-
 }
 
 .property .p {
@@ -326,6 +310,7 @@ body {
 
 .how-work {
     padding: 40px 0;
+
     .btn-next-steps {
         display: flex;
         padding: 15px;
@@ -334,7 +319,6 @@ body {
         gap: 10px;
         text-align: center;
         font-family: var(--font-Sub-Heading);
-
         width: 749px;
         flex-shrink: 0;
         border-radius: var(--Spacing-m, 16px);
@@ -353,9 +337,7 @@ body {
             cursor: pointer;
             transition: all .3s;
             margin: 0;
-
         }
-
     }
 
     .btn-next-steps:hover {
@@ -369,7 +351,6 @@ body {
     .press {
         color: var(--text-landing-subtitle-color);
     }
-
 }
 
 .cards {
@@ -423,54 +404,68 @@ body {
 .item:hover {
     background: var(--bg-card-hover);
 }
+
 .area-1 {
     grid-area: area-1;
 }
+
 .area-2 {
     grid-area: area-2;
 }
+
 .area-3 {
     grid-area: area-3;
 }
+
 .area-4 {
     grid-area: area-4;
 }
+
 .area-5 {
     grid-area: area-5;
 }
+
 .area-6 {
     grid-area: area-6;
 }
+
 .area-7 {
     grid-area: area-7;
 }
+
 .area-8 {
     grid-area: area-8;
 }
+
 .area-9 {
     grid-area: area-9;
 }
+
 .area-10 {
     grid-area: area-10;
 }
+
 .nested-item {
     grid-area: nested-1;
 }
+
 .nested-2 {
     grid-area: nested-2;
 }
+
 .nested-3 {
     grid-area: nested-3;
 }
+
 .nested-4 {
     grid-area: nested-4;
 }
 
-
-.cards-mobile{
-    display:none;
+.cards-mobile {
+    display: none;
     flex-direction: column;
     gap: 20px;
+
     h4 {
         color: var(--text-white);
         font-feature-settings: 'liga' off, 'clig' off;
@@ -483,10 +478,12 @@ body {
         margin-top: 40px;
     }
 }
+
 .card-item {
- background: var(--bg-card);
+    background: var(--bg-card);
     border-radius: 8px;
     overflow: hidden;
+
     p {
         margin: 0;
     }
@@ -503,16 +500,13 @@ body {
 
 }
 
-
-
-
 .info-card {
     max-height: 0;
     opacity: 0;
     text-align: left;
     padding: 0 15px;
     overflow: hidden;
-     color: #d1d1e0;
+    color: #d1d1e0;
     transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
     -webkit-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
     -moz-transition: max-height 0.4s ease, opacity 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
@@ -521,12 +515,10 @@ body {
 }
 
 .info-card.open {
-    max-height: 500px; 
+    max-height: 500px;
     opacity: 1;
     padding-bottom: 15px;
 }
-
-
 
 .card-item span {
     background-color: var(--text-white);
@@ -553,11 +545,8 @@ body {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
-/* For fifth item grid area */
 
-
-
-.tell-us {
+/* .tell-us {
     margin-top: 60px;
     padding: 60px 0;
 
@@ -585,7 +574,6 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
-            /* 72px */
         }
 
         textarea {
@@ -605,11 +593,12 @@ body {
             padding: 15px;
         }
     }
-}
+} */
 
 .reviews {
     padding: 60px 0;
     overflow: hidden;
+
     & h6 {
         color: var(--text-landing-subtitle-color);
         text-align: center;
@@ -617,20 +606,32 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        /* 36px */
     }
-    .comments {
+
+    .container-review {
         margin-top: 40px;
         background: var(--Palette-Navy-Navy900, #0C1128);
+    }
+
+    .comments {
         display: flex;
         padding: 15px 40px;
         gap: 40px;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
 
 
         .comment {
             display: flex;
             flex-direction: column;
             user-select: none;
+            padding: 20px;
+
+            h6 {
+                color: var(--text-white);
+                margin-bottom: 0;
+            }
 
             p {
                 color: var(--text-white);
@@ -649,25 +650,30 @@ body {
 
 .pricing {
     padding: 50px 20px;
+
     .des-sec {
         color: var(--text-landing-subtitle-color);
         text-align: center;
     }
+
     hr {
         border-color: var(--text-white);
         opacity: 1;
     }
+
     .features-pricing {
         list-style: none;
         padding: 0;
         margin-top: 15px;
         font-size: 0.9rem;
+
         li {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
             color: var(--text-white);
         }
+
         li::before {
             content: '✔️';
             margin-right: 8px;
@@ -706,7 +712,7 @@ body {
     flex-wrap: wrap;
 
     .pricing-card {
-        background: linear-gradient(135deg, #4e46b4, #6930c3);
+        background: var(--bg-card);
         padding: 20px;
         width: 300px;
         text-align: left;
@@ -717,24 +723,29 @@ body {
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+
         &:hover {
             transform: translateY(10px);
             border: 2px solid transparent;
         }
+
         h4 {
             color: var(--text-white);
             font-family: var(--font-Sub-Heading);
         }
+
         .price {
             font-size: 2.5rem;
             margin: 10px 0;
             color: var(--text-white);
         }
+
         .price-description {
             font-size: 0.9rem;
             margin-bottom: 20px;
             color: var(--text-landing-subtitle-color);
         }
+
         .trial-button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -877,24 +888,9 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:1200px) {
- 
-
     .landing {
-        padding: 8.5rem 0;
+        padding: 8.5rem 0 6.5rem;
     }
 
     #typed-output,
@@ -908,13 +904,10 @@ body {
 
     .reviews .comments {
         padding: 15px 20px;
-
     }
 }
 
 @media (max-width:992px) {
-
-   
 
     #typed-output,
     .content h2,
@@ -929,28 +922,26 @@ body {
     .title-section {
         font-size: 2.5rem !important;
     }
-
     .btn-next-steps {
         width: 630px !important;
         font-size: 1.5rem !important;
+        padding: 12px 0 !important;
     }
-
     .section-cards::before {
         background-image: none;
     }
     .cards-mobile {
         display: flex;
     }
-    .pricing-card{
+    .pricing-card {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         width: 100% !important;
-
-        & .price-description{
+        & .price-description {
             display: none;
         }
-        & hr{
+        & hr {
             display: none;
         }
     }
@@ -958,13 +949,14 @@ body {
     .questions-section .info-box {
         display: none;
     }
+
     .property {
         width: 80%;
-    } 
+    }
 }
 
 @media (max-width:767px) {
-    
+
     section {
         padding: 40px 0 !important;
     }
@@ -988,11 +980,7 @@ body {
         display: block !important;
     }
 
-    .btn-basic {
-        /* display: none !important; */
-    }
-
-    .section-title{
+    .section-title {
         font-size: 1.4rem;
     }
 
@@ -1039,9 +1027,11 @@ body {
         font-size: 1.25rem !important;
         padding: 15px !important;
     }
-.property {
-    width: 100%;
-}
+
+    .property {
+        width: 100%;
+    }
+
     .questions-section .info-box {
         display: none;
     }
@@ -1053,10 +1043,6 @@ body {
     section {
         padding: 30px 0 !important;
     }
-
-    /* section:not(.landing) {
-        margin: 50px 0;
-    } */
 
     .btn-basic {
         width: 100% !important;
@@ -1108,18 +1094,11 @@ body {
         flex-direction: column;
         gap: 10px !important;
     }
-    .pricing-card{
+
+    .pricing-card {
         flex-direction: column !important;
     }
 }
-
-
-
-
-
-
-
-
 
 @keyframes moveBackground {
     0% {
