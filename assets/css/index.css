@@ -54,6 +54,7 @@ button {
 section {
     padding: 60px 0;
 }
+
 .sec-bg {
     height: calc(100vh - 90px - 130px);
     position: relative;

@@ -212,22 +212,33 @@ button {
 .card-sign-form .input-filled-new {
     display: flex;
     width: 100%;
-    max-height:40px;
+    height:40px;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px 20px;
     position: relative;
     border-radius: 36px;
+    
+}
+.card-sign-form .input-filled-new input {
+    
+    height:40px;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
     border: 2px solid;
     border-color: #e3e3e3;
 }
 
-.input-filled-new:hover{
-    border: 2px solid  #AE84F866;
+.input-filled-new input:hover{
+    
+    background: #03050640;
 }
-.input-filled-new:focus{
- border: 2px solid  #703ACB99;
+.input-filled-new input:focus{
+    background: #03050640;
 }
 
 .card-sign-form .text-wrapper-4 {
@@ -250,16 +261,19 @@ button {
     flex: 0 0 auto;
 }
 
+.card-sign-form .toggle-icon {
+    margin-left: auto;
+}
 .card-sign-form .text-input-icons {
     position: relative;
     width: 24px;
     height: 24px;
+    margin-left: auto;
 }
 
 .card-sign-form .text-wrapper-5 {
     position: relative;
     align-self: stretch;
-    font-family: "DM Sans-Bold", Helvetica;
     font-weight: 700;
     color:  #BD66E9;
     font-size: 16px;
@@ -322,8 +336,6 @@ button {
 .card-sign-form .hyperlink {
     position: relative;
     width: fit-content;
-    margin-top: -1.00px;
-    font-family: "DM Sans-Bold", Helvetica;
     font-weight: 700;
     color: #BD66E9;
     font-size: 18px;
@@ -366,4 +378,42 @@ button {
         padding: 20px 10px;
     }
     
+}
+
+
+
+.no-header {
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 25px;
+        color: var(--text-white);
+        font-family: var(--font-Sub-Heading);
+    }
+}
+.non-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../imgs/sectionlanding.png) 50% / cover no-repeat;
+    filter: grayscale(69%) brightness(50%) blur(3px);
+    transform: scale(1.2);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@media (max-width: 480px) {
+    .no-header {
+        height: 100vh !important;
+    }
 }
