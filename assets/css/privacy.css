@@ -7,19 +7,42 @@ body {
     font-family: var(--font-family);
     background-color: rgb(16, 22, 53) !important;
 }
+
+.privacy-section {
+    height: auto !important;
+}
 h1 {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 40px;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
     color: #ffffff;
 }
-.content {
-    line-height: 1.6;
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.content p {
-    margin-bottom: 40px;
+.content h5 {
+    text-align: left;
+    @media (max-width :767px) {
+        font-size: 1.1rem;
+    }
+}
+.content li {
+    margin-bottom: 10px;
     font-size: 1em;
-    color: #cccccc;
-    text-align: center;
+    color: var(--text-white);
+    text-align: left;
+
+@media (max-width :767px) {
+    font-size: 14px;
+}
+}
+ p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: var(--text-white);
+    text-align: left;
 
 }

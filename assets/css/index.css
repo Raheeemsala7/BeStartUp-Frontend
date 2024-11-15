@@ -55,6 +55,7 @@ section {
     padding: 60px 0;
 }
 .sec-bg {
+    height: calc(100vh - 90px - 130px);
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -63,8 +64,8 @@ section {
     align-items: center;
     color: var(--text-white);
     h2 {
-        font-size: 3.5em;
-        margin-bottom: 50px;
+        font-size: 2.5em;
+        margin-bottom: 25px;
         color: var(--text-white);
         font-family: var(--font-Sub-Heading);
     }

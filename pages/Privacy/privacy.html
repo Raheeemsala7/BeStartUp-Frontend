@@ -16,98 +16,148 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 
     <link rel="stylesheet" href="../../assets/css/index.css" />
     <link rel="stylesheet" href="../../assets/css/privacy.css" />
-    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/navbar.css" />
     <link rel="stylesheet" href="../../assets/css/footer.css" />
-
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="header">
-          <a class="navbar-brand" href="#">
-            <img src="../../assets/svg/logo.webp" alt="Logo">
-          </a>
-          
-          <button class="navbar-toggler" id="toggle-button" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" id="toggler-icon">&#9776;</span>
-          </button>
-  
-            <ul class=" collapse-screen">
-              <li class="nav-item"><a class="nav-link" href="../FAQ/FAQ.html">FAQs</a></li>
-              <li class="nav-item"><a class="nav-link" href="../About US/About.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="../Privacy/privacy.html">Privacy & Terms</a></li>
-              <button class="primaryButton ">
-                <img src="../../assets/imgs/Sparkling.png" alt="">
-                <p class="text-white">Get Start</p>
-              </button>
-              <div class="dropdown">
-                <select id="language-selector">
-                  <option value="ar">Ar</option>
-                  <option value="en">En</option>
-                  <option value="es">IT</option>
-                </select>
-              </div>
-            </ul>
-        </div> 
-        <div class="collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="../FAQ/FAQ.html">FAQs</a></li>
-            <li class="nav-item"><a class="nav-link" href="../About US/About.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="../Privacy/privacy.html">Privacy & Terms</a></li>
-        
-            <div class="dropdown">
-              <select id="language-selector">
-                <option value="ar">Ar</option>
-                <option value="en">En</option>
-                <option value="es">IT</option>
-              </select>
-            </div>
-            
-            
-            
-          </ul>
+    <nav class="navbar ">
+      <div class="header">
+        <i
+      id="open-nav"
+      class="fas fa-bars text-white d-lg-none"
+      style="font-size: 24px; cursor: pointer"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+  ></i>
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/svg/logo.webp" alt="Logo">
+      </a>
+
+
+      <ul class=" collapse-screen">
+        <li class="nav-item"><a class="nav-link" href="../FAQ/FAQ.html">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="../About US/About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Privacy/privacy.html">Privacy & Terms</a></li>
+        <button class="primaryButton ">
+          <img src="../../assets/imgs/Sparkling.png" alt="">
+          <p class="text-white">Get started</p>
+        </button>
+        <div class="dropdown">
+          <select id="language-selector">
+            <option value="ar">Ar</option>
+            <option value="en">En</option>
+            <option value="es">IT</option>
+          </select>
         </div>
+      </ul>
+
+      <a class="icon-user" href="../signup/signup.html">
+        <img src="../../assets/svg/user.svg" alt="user icon">
+      </a>
       </div>
-    </nav>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="direction: ltr;">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ">
+                    
+                    <li class="nav-item"><a class="nav-link" href="../FAQ/FAQ.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../About US/About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Privacy/privacy.html">Privacy & Terms</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="#">ِAr</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">En</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">It</a></li>
+                    
+                  </ul>
+            </div>
+        </div>
+        
+</nav> 
     <section class="privacy-section sec-bg">
       <div class="container">
         <h1>Privacy & Terms</h1>
+        <p>
+          Welcome to Bestartup AI! We value your privacy and are committed to
+          protecting your personal information. This Privacy Policy outlines how
+          we collect, use, and protect your data when you use our services.
+        </p>
         <div class="content">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea,
-            dolorem id ducimus iure eum nam qui quidem distinctio corporis? Quod
-            sunt cumque odio asperiores quaerat? Consectetur molestiae possimus
-            perspiciatis.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea,
-            dolorem id ducimus iure eum nam qui quidem distinctio corporis? Quod
-            sunt cumque odio asperiores quaerat? Consectetur molestiae possimus
-            perspiciatis.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea,
-            dolorem id ducimus iure eum nam qui quidem distinctio corporis? Quod
-            sunt cumque odio asperiores quaerat? Consectetur molestiae possimus
-            perspiciatis.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea,
-            dolorem id ducimus iure eum nam qui quidem distinctio corporis? Quod
-            sunt cumque odio asperiores quaerat? Consectetur molestiae possimus
-            perspiciatis.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ea,
-            dolorem id ducimus iure eum nam qui quidem distinctio corporis? Quod
-            sunt cumque odio asperiores quaerat? Consectetur molestiae possimus
-            perspiciatis.
-          </p>
+          <div>
+            <h5>
+              1. Information We Collect We collect the following types of
+              information:
+            </h5>
+            <ul>
+              <li>
+                Personal Information: Name, email address, phone number, and
+                other contact details you provide when you sign up or contact
+                us.
+              </li>
+              <li>
+                Usage Data: Information about how you use our platform,
+                including IP address, browser type, and usage patterns.
+              </li>
+              <li>
+                Cookies and Tracking Technologies: We use cookies to enhance
+                your experience on our site and collect data to optimize our
+                services.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>2. How We Use Your Information We use your data to:</h5>
+            <ul>
+              <li>Provide and improve our services.</li>
+              <li>
+                Communicate with you, respond to inquiries, and offer support.
+              </li>
+              <li>
+                Analyze and understand how you use our platform to enhance our
+                offerings.
+              </li>
+              <li>
+                Analyze and understand how you use our platform to enhance our
+                offerings. Comply with legal obligations.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>Data Sharing and Disclosure </h5>
+            <ul>
+              <li>We do not sell your personal information. We may share your data with trusted third-
+                party service providers who assist us in operating our platform. These providers are 
+                contractually obligated to keep your data confidential and use it solely for providing 
+                services to us. </li>
+            </ul>
+          </div>
+          <div>
+            <h5>3.  Data Security  </h5>
+            <ul>
+              <li>We implement industry-standard measures to protect your personal information. 
+                While we strive to use commercially acceptable means to protect your data, no 
+                method of transmission over the internet or electronic storage is 100% secure. </li>
+            </ul>
+          </div>
+          <div>
+            <h5>4.  Your Rights  Depending on your location, you may have certain rights over your personal data, 
+              including:  </h5>
+            <ul>
+              <li> The right to access or request a copy of your data. </li>
+              <li>The right to correct or update your personal data. </li>
+              <li>The right to request deletion of your data. </li>
+              <li>To exercise any of these rights, please contact us at <a href="">help@bestartup.ai</a> </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -119,17 +169,14 @@
           <a href="#">About</a>
           <a href="#">Contact Us</a>
           <a href="#">Privacy & Terms</a>
+        </div>
+        <hr style="opacity: 0.5" />
+        <div class="footer-copyright">&copy; 2024 Be Startup.</div>
       </div>
-      <hr style="opacity: .5;">
-      <div class="footer-copyright">
-          &copy; 2024 Be Startup.
-      </div>
-      </div>
-  </footer>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  
     <script src="../../assets/js/navbar.js"></script>
-
   </body>
 </html>

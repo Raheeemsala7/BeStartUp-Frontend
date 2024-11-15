@@ -19,9 +19,14 @@
 
           <form id="login-form">
             <div class="frame-2">
+              <span id="error" class="error-message"></span>
               <button type="button" class="btn-google">
-                <img class="plus" src="../../assets/svg/Group.svg" alt="logo" />
-                <p class="text-wrapper-2">Sign in with Google</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.16 12.8402C20.16 12.2375 20.1059 11.6579 20.0055 11.1016H12V14.3895H16.5746C16.3775 15.452 15.7786 16.3523 14.8784 16.955V19.0877H17.6255C19.2327 17.6079 20.16 15.4288 20.16 12.8402Z" fill="#4285F4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.1506C14.295 21.1506 16.2191 20.3895 17.6254 19.0913L14.8784 16.9586C14.1173 17.4686 13.1436 17.7699 12 17.7699C9.78611 17.7699 7.91224 16.2747 7.24383 14.2656H4.40405V16.4679C5.80269 19.2459 8.67724 21.1506 12 21.1506Z" fill="#34A853"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.24387 14.2604C7.07387 13.7504 6.97728 13.2056 6.97728 12.6454C6.97728 12.0852 7.07387 11.5404 7.24387 11.0304V8.82812H4.40409C3.82841 9.97563 3.5 11.2738 3.5 12.6454C3.5 14.017 3.82841 15.3152 4.40409 16.4627L7.24387 14.2604Z" fill="#FBBC05"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.52912C13.2479 7.52912 14.3684 7.95799 15.2493 8.80026L17.6873 6.3623C16.2152 4.99071 14.2911 4.14844 12 4.14844C8.67724 4.14844 5.80269 6.05321 4.40405 8.83117L7.24383 11.0334C7.91224 9.02435 9.78611 7.52912 12 7.52912Z" fill="#EA4335"/>
+                  </svg>                <p class="text-wrapper-2">Sign in with Google</p>
               </button>
               <div class="or">
                 <img class="vector" src="../../assets/svg/Vector 1.svg" />
@@ -37,7 +42,7 @@
                     placeholder="E-mail address"
                   />
                 </div>
-                <span id="email-error" class="error-message"></span>
+               
               </div>
 
               <div class="form-control">
@@ -56,7 +61,6 @@
                       />
                     </span>
                 </div>
-                  <span id="password-error" class="error-message"></span>
                   <a
                     href="../froget-password/froget-password.html"
                     class="text-wrapper-5"
